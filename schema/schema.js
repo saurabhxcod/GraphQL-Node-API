@@ -8,6 +8,12 @@ const RootQuery = new GraphQLObjectType({
       resolve() {
         return 'Hello from GraphQL';
         }
+    },
+    hi: {
+      type: GraphQLString,
+      resolve() {
+        return 'Hi from GraphQL';
+        }
     }
   }
 });

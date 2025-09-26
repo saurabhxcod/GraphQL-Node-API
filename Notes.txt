@@ -1,0 +1,40 @@
+
+Rest API vs GraphQL
+REST API:
+- Uses multiple endpoints for different resources (e.g., /users, /posts).
+- Each endpoint returns a fixed data structure.
+- Over-fetching or under-fetching of data is common (you may get more or less data than needed).
+- Uses standard HTTP methods: GET, POST, PUT, DELETE.
+- Caching is straightforward with HTTP.
+
+GraphQL:
+- Uses a single endpoint for all requests.
+- Clients specify exactly what data they need in a query.
+- Avoids over-fetching and under-fetching; only requested data is returned.
+- Uses queries and mutations instead of HTTP methods.
+- More flexible but requires more setup for caching and security.
+
+=====================================================================================================================================
+GraphQL Mutations:
+
+- In GraphQL, "mutations" are used to modify server-side data. This includes operations like creating, updating, or deleting records.
+- While queries are used to fetch data, mutations are used to write data.
+- Each mutation can accept arguments (inputs) and returns a result, often the modified object or a status message.
+- Mutations are defined in the schema, similar to queries, but under a separate "Mutation" type.
+- Example mutation operation:
+  mutation {
+    addUser(name: "Alice", age: 30) {
+      id
+      name
+      age
+    }
+  }
+- In this example, the "addUser" mutation creates a new user and returns the user's id, name, and age.
+- Mutations are always sent as POST requests to the GraphQL endpoint.
+
+
+=======================================================================================================================================
+
+MongoDB Connection with GraphQL
+GraphQL Iput Types & Validation-:
+

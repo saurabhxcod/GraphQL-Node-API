@@ -36,5 +36,10 @@ GraphQL Mutations:
 =======================================================================================================================================
 
 MongoDB Connection with GraphQL
-GraphQL Iput Types & Validation-:
+GraphQL Iput Types & Validation-:GraphQLInputObjectType,GraphQLNonNull
+
+=======================================================================================================================================
+
+One-to-many Relationship
+Author->Books(1:M)
 

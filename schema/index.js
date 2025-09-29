@@ -10,7 +10,7 @@ const Mutation=new GraphQLObjectType({
         addAuthor:{
             type:AuthorType,
             args:{
-                name:{type:GraphQLString}
+                  name:{type:GraphQLString}
             },
             resolve(parent,args){
                 const author=new Author({name:args.name});

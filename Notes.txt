@@ -43,3 +43,13 @@ GraphQL Iput Types & Validation-:GraphQLInputObjectType,GraphQLNonNull
 One-to-many Relationship
 Author->Books(1:M)
 
+
+
+ObjectTypeFormat:
+name:
+field:
+  uniqueName:
+    type
+    args
+    resolve(parent,args)
+      return

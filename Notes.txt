@@ -53,3 +53,5 @@ field:
     args
     resolve(parent,args)
       return
+
+Establish 1:M relationship as book-author relationship
